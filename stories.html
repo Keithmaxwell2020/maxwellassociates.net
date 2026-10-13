@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Keith J Maxwell"><meta name="description" content="Keith J Maxwell, Maxwell Associates: engineering, project management and maritime consulting."><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stories | Keith J Maxwell · Maxwell Associates</title><link rel="stylesheet" href="css/style.css"><script src="js/config.js"></script></head><body>
+<header><div class="wrap"><a class="brand" href="index.html">MAXWELL <span>ASSOCIATES</span></a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="stories.html" class="active">Stories</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a></nav></div></header>
+<div class="page-head"><h1>Stories</h1></div><section><div class="wrap">
+<h2>PDF Stories</h2><div id="pdf-stories" class="grid" style="margin-bottom:40px"></div><h2>Posts</h2>
+<article id="post-1" class="card" style="margin-bottom:24px"><span class="tag">Sample post</span><h3>Sample Story One</h3><p class="meta"><span class="ph">[Date]</span> &middot; Keith J Maxwell</p><p>This is a sample post to show how stories appear. Replace this text with your own writing. <span class="ph">[Story text here]</span></p></article>
+<article id="post-2" class="card"><span class="tag">Sample post</span><h3>Sample Story Two</h3><p class="meta"><span class="ph">[Date]</span> &middot; Keith J Maxwell</p><p>Another sample post. To add a story, copy one of these blocks and change the title, date, and text. <span class="ph">[Story text here]</span></p></article></div></section>
+<script type="application/json" id="stories-data">
+[
+  {
+    "title": "Sample PDF Story",
+    "date": "[Date]",
+    "summary": "Sample PDF - shows how a PDF story appears. Replace with your own.",
+    "file": "stories/pdfs/sample-story.pdf",
+    "sample": true
+  }
+]
+</script>
+<script>
+(function(){
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
+  function render(list){
+    var el=document.getElementById("pdf-stories");
+    if(!list.length){el.innerHTML="<p>No PDF stories yet.</p>";return;}
+    el.innerHTML=list.map(function(s){
+      return '<div class="card">'+(s.sample?'<span class="tag">Sample PDF</span>':'')+'<h3>'+esc(s.title)+'</h3><p class="meta">'+esc(s.date||"")+'</p><p>'+esc(s.summary||"")+'</p><div class="pdf-actions"><a class="btn sm" href="'+esc(s.file)+'" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="'+esc(s.file)+'" download>Download</a></div></div>';
+    }).join("");
+  }
+  var fallback=JSON.parse(document.getElementById("stories-data").textContent);
+  if(location.protocol==="file:"){render(fallback);return;}
+  fetch("stories/stories.json",{cache:"no-store"}).then(function(r){return r.json();}).then(render).catch(function(){render(fallback);});
+})();
+</script>
+<footer>&copy; 2026 Maxwell Associates &middot; Keith J Maxwell &middot; <a class="site-email" href="mailto:info@maxwellassociates.net">info@maxwellassociates.net</a></footer></body></html>

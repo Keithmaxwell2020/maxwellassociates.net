@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Sample PDF Story",
+    "date": "[Date]",
+    "summary": "Sample PDF - shows how a PDF story appears. Replace with your own.",
+    "file": "stories/pdfs/sample-story.pdf",
+    "sample": true
+  }
+]
