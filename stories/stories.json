@@ -1,9 +1,20 @@
 [
   {
-    "title": "Sample PDF Story",
-    "date": "[Date]",
-    "summary": "Sample PDF - shows how a PDF story appears. Replace with your own.",
-    "file": "stories/pdfs/sample-story.pdf",
-    "sample": true
+    "title": "Forge-350: A U.S. Nuclear Design and Implementation Guide",
+    "date": "October 2026",
+    "summary": "Evaluates known nuclear plant types against U.S. efficiency, safety, licensing, and economic constraints, then proposes Forge-350, a fluoride-salt-cooled, TRISO-fueled plant for repowering coal sites with decoupled nitrate-salt storage, plus a path from site screening to commercial operation.",
+    "file": "stories/pdfs/forge-350-nuclear-design-guide.pdf"
+  },
+  {
+    "title": "Meridian Economic and Infrastructure Charter: A Public Proposal",
+    "date": "October 2026",
+    "summary": "Proposes a listed development corporation, chartered by treaty with Namibia, Botswana, South Africa, Zimbabwe, and Mozambique, to build and administer consented land parcels under a published charter, drawing lessons from historical chartered companies.",
+    "file": "stories/pdfs/meridian-economic-infrastructure-charter.pdf"
+  },
+  {
+    "title": "From Motor Brain-Computer Interfaces to a Closed-Loop Cognitive Copilot",
+    "date": "October 5, 2026",
+    "summary": "A phased research concept that rejects the idea of a 'merged mind' and instead tests whether a person can do harder intellectual work through a narrow, auditable BCI channel to an external AI model, measured against keyboard use on pre-registered tasks.",
+    "file": "stories/pdfs/cognitive-copilot-bci-proposal.pdf"
   }
 ]
