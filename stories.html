@@ -1,61 +1,12 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="author" content="Keith J Maxwell"><meta name="description" content="Keith J Maxwell, Maxwell Associates: engineering, project management and maritime consulting."><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stories | Keith J Maxwell · Maxwell Associates</title><link rel="stylesheet" href="css/style.css"><script src="js/config.js"></script></head><body>
 <header><div class="wrap"><a class="brand" href="index.html">MAXWELL <span>ASSOCIATES</span></a><nav><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="stories.html" class="active">Stories</a><a href="documents.html">Documents</a><a href="contact.html">Contact</a></nav></div></header>
 <div class="page-head"><h1>Stories</h1></div><section><div class="wrap">
-<h2>Stories &amp; Papers</h2><div id="pdf-stories" class="grid" style="margin-bottom:40px"></div></div></section>
-<script type="application/json" id="stories-data">
-[
-  {
-    "title": "The Human Condition Writings of Mark Twain",
-    "date": "October 2026",
-    "summary": "A survey of human traits Mark Twain skewered, including selfishness and the drive for self-approval, cruelty, hypocrisy, cowardice, ingratitude, and the pull of the forbidden, each paired with a humorous quote or story from works like What Is Man?, Tom Sawyer, Huckleberry Finn, and Following the Equator.",
-    "file": "stories/pdfs/observed-human-condition-mark-twain.pdf"
-  },
-  {
-    "title": "Uranium in the Desert: From a Contested Colonial Resource to Major Global Supplier for China",
-    "date": "October 2026",
-    "summary": "Traces Namibia's uranium industry from the 1928 discovery near the Rössing Mountains and the controversial colonial-era Rössing mine to its rise as a top-three global producer, explaining why China, now the dominant investor in Namibia's major mines, is so interested in the country, which has a strong nuclear regulator but no nuclear power plants.",
-    "file": "stories/pdfs/uranium-in-the-desert-namibia-china.pdf"
-  },
-  {
-    "title": "Amazon and Constellation Bet $3B on Maryland Nuclear",
-    "date": "October 2026",
-    "summary": "A LinkedIn post by TheJobWalk on Constellation and Amazon's 20-year deal for 690 megawatts from Maryland's Calvert Cliffs nuclear plant, unlocking more than $3 billion in infrastructure investment including about 190 megawatts of new capacity between 2030 and 2032.",
-    "url": "https://lnkd.in/p/eHY6wnxJ",
-    "source": "LinkedIn"
-  },
-  {
-    "title": "Forge-350: A U.S. Nuclear Design and Implementation Guide",
-    "date": "October 2026",
-    "summary": "Evaluates known nuclear plant types against U.S. efficiency, safety, licensing, and economic constraints, then proposes Forge-350, a fluoride-salt-cooled, TRISO-fueled plant for repowering coal sites with decoupled nitrate-salt storage, plus a path from site screening to commercial operation.",
-    "file": "stories/pdfs/forge-350-nuclear-design-guide.pdf"
-  },
-  {
-    "title": "Meridian Economic and Infrastructure Charter: A Public Proposal",
-    "date": "October 2026",
-    "summary": "Proposes a listed development corporation, chartered by treaty with Namibia, Botswana, South Africa, Zimbabwe, and Mozambique, to build and administer consented land parcels under a published charter, drawing lessons from historical chartered companies.",
-    "file": "stories/pdfs/meridian-economic-infrastructure-charter.pdf"
-  },
-  {
-    "title": "From Motor Brain-Computer Interfaces to a Closed-Loop Cognitive Copilot",
-    "date": "October 5, 2026",
-    "summary": "A phased research concept that rejects the idea of a 'merged mind' and instead tests whether a person can do harder intellectual work through a narrow, auditable BCI channel to an external AI model, measured against keyboard use on pre-registered tasks.",
-    "file": "stories/pdfs/cognitive-copilot-bci-proposal.pdf"
-  }
-]
-</script>
-<script>
-(function(){
-  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c];});}
-  function render(list){
-    var el=document.getElementById("pdf-stories");
-    if(!list.length){el.innerHTML="<p>No PDF stories yet.</p>";return;}
-    el.innerHTML=list.map(function(s){
-      return '<div class="card">'+(s.sample?'<span class="tag">Sample PDF</span>':'')+'<h3>'+esc(s.title)+'</h3><p class="meta">'+esc(s.date||"")+'</p><p>'+esc(s.summary||"")+'</p>'+(s.url?'<div class="pdf-actions"><a class="btn sm" href="'+esc(s.url)+'" target="_blank" rel="noopener">Read on '+esc(s.source||"site")+'</a></div></div>':'<div class="pdf-actions"><a class="btn sm" href="'+esc(s.file)+'" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="'+esc(s.file)+'" download>Download</a></div></div>');
-    }).join("");
-  }
-  var fallback=JSON.parse(document.getElementById("stories-data").textContent);
-  if(location.protocol==="file:"){render(fallback);return;}
-  fetch("stories/stories.json",{cache:"no-store"}).then(function(r){return r.json();}).then(render).catch(function(){render(fallback);});
-})();
-</script>
-<footer>&copy; 2026 Maxwell Associates &middot; Keith J Maxwell &middot; <a class="site-email" href="mailto:info@maxwellassociates.net">info@maxwellassociates.net</a></footer></body></html>
+<h2>Stories &amp; Papers</h2><div id="pdf-stories" class="grid" style="margin-bottom:40px">
+<div class="card"><h3>The Human Condition Writings of Mark Twain</h3><p class="meta">October 2026</p><p>A survey of human traits Mark Twain skewered, including selfishness and the drive for self-approval, cruelty, hypocrisy, cowardice, ingratitude, and the pull of the forbidden, each paired with a humorous quote or story from works like What Is Man?, Tom Sawyer, Huckleberry Finn, and Following the Equator.</p><div class="pdf-actions"><a class="btn sm" href="stories/pdfs/observed-human-condition-mark-twain.pdf" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="stories/pdfs/observed-human-condition-mark-twain.pdf" download>Download</a></div></div>
+<div class="card"><h3>Uranium in the Desert: From a Contested Colonial Resource to Major Global Supplier for China</h3><p class="meta">October 2026</p><p>Traces Namibia&#x27;s uranium industry from the 1928 discovery near the Rössing Mountains and the controversial colonial-era Rössing mine to its rise as a top-three global producer, explaining why China, now the dominant investor in Namibia&#x27;s major mines, is so interested in the country, which has a strong nuclear regulator but no nuclear power plants.</p><div class="pdf-actions"><a class="btn sm" href="stories/pdfs/uranium-in-the-desert-namibia-china.pdf" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="stories/pdfs/uranium-in-the-desert-namibia-china.pdf" download>Download</a></div></div>
+<div class="card"><h3>Amazon and Constellation Bet $3B on Maryland Nuclear</h3><p class="meta">October 2026</p><p>A LinkedIn post by TheJobWalk on Constellation and Amazon&#x27;s 20-year deal for 690 megawatts from Maryland&#x27;s Calvert Cliffs nuclear plant, unlocking more than $3 billion in infrastructure investment including about 190 megawatts of new capacity between 2030 and 2032.</p><div class="pdf-actions"><a class="btn sm" href="https://lnkd.in/p/eHY6wnxJ" target="_blank" rel="noopener">Read on LinkedIn</a></div></div>
+<div class="card"><h3>Forge-350: A U.S. Nuclear Design and Implementation Guide</h3><p class="meta">October 2026</p><p>Evaluates known nuclear plant types against U.S. efficiency, safety, licensing, and economic constraints, then proposes Forge-350, a fluoride-salt-cooled, TRISO-fueled plant for repowering coal sites with decoupled nitrate-salt storage, plus a path from site screening to commercial operation.</p><div class="pdf-actions"><a class="btn sm" href="stories/pdfs/forge-350-nuclear-design-guide.pdf" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="stories/pdfs/forge-350-nuclear-design-guide.pdf" download>Download</a></div></div>
+<div class="card"><h3>Meridian Economic and Infrastructure Charter: A Public Proposal</h3><p class="meta">October 2026</p><p>Proposes a listed development corporation, chartered by treaty with Namibia, Botswana, South Africa, Zimbabwe, and Mozambique, to build and administer consented land parcels under a published charter, drawing lessons from historical chartered companies.</p><div class="pdf-actions"><a class="btn sm" href="stories/pdfs/meridian-economic-infrastructure-charter.pdf" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="stories/pdfs/meridian-economic-infrastructure-charter.pdf" download>Download</a></div></div>
+<div class="card"><h3>From Motor Brain-Computer Interfaces to a Closed-Loop Cognitive Copilot</h3><p class="meta">October 5, 2026</p><p>A phased research concept that rejects the idea of a &#x27;merged mind&#x27; and instead tests whether a person can do harder intellectual work through a narrow, auditable BCI channel to an external AI model, measured against keyboard use on pre-registered tasks.</p><div class="pdf-actions"><a class="btn sm" href="stories/pdfs/cognitive-copilot-bci-proposal.pdf" target="_blank" rel="noopener">Read PDF</a><a class="btn sm outline" href="stories/pdfs/cognitive-copilot-bci-proposal.pdf" download>Download</a></div></div>
+</div></div></section>
+<footer>&copy; 2026 Maxwell Associates &middot; Keith J Maxwell &middot; <a class="site-email" href="mailto:info@maxwellassociates.net">info@maxwellassociates.net</a></footer><script data-goatcounter="https://maxwellassociates.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></body></html>
