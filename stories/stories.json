@@ -3,19 +3,22 @@
     "title": "Restoring America's Nuclear Fuel Reprocessing Life Cycle",
     "date": "October 2026",
     "summary": "A policy white paper on moving U.S. spent nuclear fuel from the liability to the asset column by restoring a closed fuel cycle, lowering costs for existing and new reactor builds while reducing long-term environmental risk, federal liabilities, and proliferation concerns. It covers the financial case, history, international comparison, and the statutory, regulatory, and treaty changes required, and how to modernize U.S. nuclear export controls.",
-    "file": "stories/pdfs/restoring-americas-nuclear-fuel-reprocessing.pdf"
+    "file": "stories/pdfs/restoring-americas-nuclear-fuel-reprocessing.pdf",
+    "page": "stories/restoring-americas-nuclear-fuel-reprocessing.html"
   },
   {
     "title": "The Human Condition Writings of Mark Twain",
     "date": "October 2026",
     "summary": "A survey of human traits Mark Twain skewered, including selfishness and the drive for self-approval, cruelty, hypocrisy, cowardice, ingratitude, and the pull of the forbidden, each paired with a humorous quote or story from works like What Is Man?, Tom Sawyer, Huckleberry Finn, and Following the Equator.",
-    "file": "stories/pdfs/observed-human-condition-mark-twain.pdf"
+    "file": "stories/pdfs/observed-human-condition-mark-twain.pdf",
+    "page": "stories/observed-human-condition-mark-twain.html"
   },
   {
     "title": "Uranium in the Desert: From a Contested Colonial Resource to Major Global Supplier for China",
     "date": "October 2026",
     "summary": "Traces Namibia's uranium industry from the 1928 discovery near the Rössing Mountains and the controversial colonial-era Rössing mine to its rise as a top-three global producer, explaining why China, now the dominant investor in Namibia's major mines, is so interested in the country, which has a strong nuclear regulator but no nuclear power plants.",
-    "file": "stories/pdfs/uranium-in-the-desert-namibia-china.pdf"
+    "file": "stories/pdfs/uranium-in-the-desert-namibia-china.pdf",
+    "page": "stories/uranium-in-the-desert-namibia-china.html"
   },
   {
     "title": "Amazon and Constellation Bet $3B on Maryland Nuclear",
@@ -28,18 +31,21 @@
     "title": "Forge-350: A U.S. Nuclear Design and Implementation Guide",
     "date": "October 2026",
     "summary": "Evaluates known nuclear plant types against U.S. efficiency, safety, licensing, and economic constraints, then proposes Forge-350, a fluoride-salt-cooled, TRISO-fueled plant for repowering coal sites with decoupled nitrate-salt storage, plus a path from site screening to commercial operation.",
-    "file": "stories/pdfs/forge-350-nuclear-design-guide.pdf"
+    "file": "stories/pdfs/forge-350-nuclear-design-guide.pdf",
+    "page": "stories/forge-350-nuclear-design-guide.html"
   },
   {
     "title": "Meridian Economic and Infrastructure Charter: A Public Proposal",
     "date": "October 2026",
     "summary": "Proposes a listed development corporation, chartered by treaty with Namibia, Botswana, South Africa, Zimbabwe, and Mozambique, to build and administer consented land parcels under a published charter, drawing lessons from historical chartered companies.",
-    "file": "stories/pdfs/meridian-economic-infrastructure-charter.pdf"
+    "file": "stories/pdfs/meridian-economic-infrastructure-charter.pdf",
+    "page": "stories/meridian-economic-infrastructure-charter.html"
   },
   {
     "title": "From Motor Brain-Computer Interfaces to a Closed-Loop Cognitive Copilot",
     "date": "October 5, 2026",
     "summary": "A phased research concept that rejects the idea of a 'merged mind' and instead tests whether a person can do harder intellectual work through a narrow, auditable BCI channel to an external AI model, measured against keyboard use on pre-registered tasks.",
-    "file": "stories/pdfs/cognitive-copilot-bci-proposal.pdf"
+    "file": "stories/pdfs/cognitive-copilot-bci-proposal.pdf",
+    "page": "stories/cognitive-copilot-bci-proposal.html"
   }
 ]
